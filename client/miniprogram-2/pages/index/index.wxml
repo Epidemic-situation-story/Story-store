@@ -1,0 +1,63 @@
+<swiper class="banner">
+<swiper-item  wx:for="{{banner}}">
+<image src="{{item}}"></image>
+</swiper-item>
+</swiper>
+
+<view class='search'>
+<input placeholder="请输入搜索内容"></input>
+</view>
+<view class="story">
+<!-- 最新故事开始 -->
+<view class="title">
+最新故事
+
+</view>
+<view wx:for="{{newsstoryList}}" class="single">
+<view class="single-top">
+<image src="{{item.pic}}"></image>
+<text>{{item.author}}</text>
+<text class="share">....</text>
+</view>
+<view class="single-text">
+{{item.Introduce}}
+</view>
+<view class="single-bottom">
+<view class="user-operation">
+点赞:{{item.praise}} 评论:{{item.comments}}
+</view>
+<view class="pay">
+购买阅读全文
+</view>
+</view>
+
+</view>
+<view class=" seemore">点击查看更多故事</view>
+<!-- 最新故事结束 -->
+<!-- 故事纸篓 -->
+<view class="title">
+故事纸篓
+
+</view>
+<view wx:for="{{allstoryList}}" class="single">
+<view class="single-top">
+<image src="{{item.pic}}"></image>
+<text>{{item.author}}</text>
+<text class="share">....</text>
+</view>
+<view class="single-text">
+{{item.Introduce}}
+</view>
+<view class="single-bottom">
+<view class="user-operation">
+点赞:{{item.praise}} 评论:{{item.comments}}
+</view>
+<view class="pay">
+购买阅读全文
+</view>
+</view>
+
+</view>
+<!-- 故事纸篓 -->
+<view class=" seemore">点击查看更多故事</view>
+</view>
