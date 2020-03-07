@@ -6,7 +6,7 @@ var AV = require('leancloud-storage')
  * @apiDescription 用户获取验证码
  * @apiGroup 用户
  * @apiVersion 0.0.1
- * @apiParam {String} phone 手机号
+ * @apiParam {string} phone 手机号
  */
 router.get('/phoneCode', function(req, res, next) {
   var phoneReg = /^1[3|4|5|8|7|9][0-9]\d{4,8}$/
@@ -31,17 +31,17 @@ router.get('/phoneCode', function(req, res, next) {
 /**
  * @api {post} /user/login login
  * @apiDescription 用户登录
- * @apiParam {String} name 用户名
- * @apiParam {String} pwd 密码
+ * @apiParam {string} name 用户名
+ * @apiParam {string} pwd 密码
  * @apiGroup 用户
  * @apiVersion 0.0.1
- * @apiSuccess {String} name 名称
- * @apiSuccess {String} avatar 头像
- * @apiSuccess {String} intro 简介
- * @apiSuccess {String} labels 标签(多个用逗号分割)
- * @apiSuccess {String} shareCount 被转发次数
- * @apiSuccess {String} troveCount 被点赞次数
- * @apiSuccess {String} balance 余额
+ * @apiSuccess {string} name 名称
+ * @apiSuccess {string} avatar 头像
+ * @apiSuccess {string} intro 简介
+ * @apiSuccess {string} labels 标签(多个用逗号分割)
+ * @apiSuccess {string} shareCount 被转发次数
+ * @apiSuccess {string} troveCount 被点赞次数
+ * @apiSuccess {string} balance 余额
  */
 router.post('/login', function(req, res, next) {
   var params = req.body

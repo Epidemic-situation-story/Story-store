@@ -27,6 +27,9 @@ app.use(timeout('15s'))
 app.use('/v1/test', require('./routes/test'))
 app.use('/v1/banner', require('./routes/banner'))
 app.use('/v1/user', require('./routes/user'))
+app.use('/v1/file', require('./routes/file'))
+app.use('/v1/story', require('./routes/story'))
+app.use('/v1/comment', require('./routes/comment'))
 
 // 设置静态资源
 app.use(express.static('public'))
