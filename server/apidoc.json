@@ -1,6 +1,7 @@
 {
   "name": "故事商店RestApi",
   "title": "故事商店RestApi",
-  "url": "http://localhost:3366/v1",
-  "description": "public restful api"
+  "url": "http://smo430ppgzzg.leanapp.cn/v1",
+  "description": "public restful api",
+  "version": "0.0.1"
 }

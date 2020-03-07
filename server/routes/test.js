@@ -2,7 +2,8 @@ var router = require('express').Router()
 /**
  * @api {get} /test/hello hello
  * @apiGroup 测试
- * @apiSuccess {json}
+ * @apiSuccess {json} result
+ * @apiVersion 0.0.1
  * @apiSuccessExample {json} Success-Response
  * {
  *    returnCode: 0,
@@ -23,6 +24,7 @@ router.get('/hello', function(req, res, next) {
 /**
  * @api {post} /test/hello hello(post)
  * @apiGroup 测试
+ * @apiVersion 0.0.1
  * @apiSuccess {json} result
  * @apiSuccessExample {json} Success-Response
  * {

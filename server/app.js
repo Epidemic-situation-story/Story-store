@@ -25,6 +25,8 @@ app.use(timeout('15s'))
 
 // 路由设置
 app.use('/v1/test', require('./routes/test'))
+app.use('/v1/banner', require('./routes/banner'))
+app.use('/v1/user', require('./routes/user'))
 
 // 设置静态资源
 app.use(express.static('public'))
@@ -63,9 +65,13 @@ app.use(function(err, req, res, next) {
     // 如果是开发环境，则将异常堆栈输出到页面，方便开发调试
     error = err
   }
-  res.render('error', {
-    message: err.message,
-    error: error
+  // res.render('error', {
+  //   message: err.message,
+  //   error: error
+  // })
+  res.json({
+    returnCode: -1,
+    errMsg: err.message
   })
 })
 app.listen(process.env.LEANCLOUD_APP_PORT || 3366)
