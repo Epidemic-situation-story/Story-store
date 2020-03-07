@@ -1,6 +1,9 @@
 server/node_modules
 server/package-lock.json
+server/yarn.lock
 client/node_modules
 client/dist
+client/package-lock.json
+client/yarn.lock
 *.log
 *.error
