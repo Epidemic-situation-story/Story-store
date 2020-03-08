@@ -1,0 +1,38 @@
+html(lang="en")
+  head
+    title 疫情故事商店
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover")
+    //- description 故事在我们疫情期间的故事商店寄存，可以出售和打赏，一部分收益转化为公益基金。另外就是故事会显示点赞数，转发量以及可被评论
+    //- link(href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css", ref="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" link rel="stylesheet")
+    link(href="/css/index.css" link rel="stylesheet")
+  body
+    .main-bg
+      .mask
+      .box.container
+        .row
+          .col-xs-12.col-md-9
+            .title WUHAN 2020
+            .title 疫情故事商店
+            .desc 
+              | 病毒带来了死亡、带来了损失，都带不走人与人的温暖。
+              br
+              | 灾难无情，人间有爱。我们希望分享疫情期间互帮互助的故事，以普通人的经历温暖人心。
+              br
+              | 疫情期间出售和寄存的故事可转化为公益基金，用来帮助需要帮助的人
+            .main-btn-group
+              a.btn(href="https://github.com/Epidemic-situation-story/Story-store", target="_blank") 项目地址
+              a.btn(href="/apidoc", target="_blank") 接口文档
+          .col-xs-12.right-part.col-md-3
+            .carousel.slide
+              .carousel-inner
+                .item.active
+                  img(src="/imgs/slide1.jpg")
+                .item
+                  img(src="/imgs/slide2.jpg")
+    .footer
+      .box
+        .text-center 欢迎更多的小伙伴能加入我们，加入疫情故事商店，疫情抗击定能成功！！！
+        .text-center.copyright wuhan2020@right
+    script(src="https://cdn.bootcss.com/jquery/3.4.0/jquery.slim.min.js")

@@ -24,6 +24,9 @@ app.set('view engine', 'jade')
 app.use(timeout('15s'))
 
 // 路由设置
+app.get('/', (req, res, next) => {
+  res.render('index')
+})
 app.use('/v1/test', require('./routes/test'))
 app.use('/v1/banner', require('./routes/banner'))
 app.use('/v1/user', require('./routes/user'))
